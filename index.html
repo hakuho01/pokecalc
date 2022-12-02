@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="">
+<nav class="navbar bg-primary text-white fs-2">Pokemon Calc</nav>
+<div class="content">
+  <div class="panels">
+    <div class="panel">
+      <div class="panel_head">
+        <h2>攻撃側ポケモン</h2>
+        <div><button>新規</button><button>保存</button><button>読込</button></div>
+      </div>
+      <h3>ポケモン</h3>
+      <dl>
+        <dd><input type="text"></dd>
+      </dl>
+      <h3>努力値</h3>
+      <div class="doryokuchi">
+        <div>H</div>
+        <input type="number">
+        <div>A</div>
+        <input type="number">
+        <div>B</div>
+        <input type="number">
+        <div>C</div>
+        <input type="number">
+        <div>D</div>
+        <input type="number">
+        <div>S</div>
+        <input type="number">
+      </div>
+      <div class="tokusei_dougu">
+        <div class="tokusei">
+          <h3>とくせい</h3>
+          <dl>
+            <dd>
+              <select>
+                <option>もうか</option>
+                <option>あついしぼう</option>
+                <option>どんかん</option>
+              </select>
+            </dd>
+          </dl>
+        </div>
+        <div class="seikaku">
+          <h3>テラスタイプ</h3>
+          <dl>
+            <dd>
+              <select>
+                <option>むし</option>
+                <option>ゴースト</option>
+                <option>エスパー</option>
+              </select>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="tokusei_dougu">
+        <div class="seikaku">
+          <h3>せいかく</h3>
+          <dl>
+            <dd>
+              <select>
+                <option>がんばりや</option>
+                <option>さみしがり</option>
+                <option>ひかえめ</option>
+              </select>
+            </dd>
+          </dl>
+        </div>
+        <div class="dougu">
+          <h3>どうぐ</h3>
+          <dl>
+            <dd>
+              <input type="text">
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <hr>
+      <h3>ランク変化</h3>
+      <div class="rank">
+        <div>H</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>A</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>B</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>C</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>D</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>S</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+      </div>
+      <h3>その他</h3>
+      <dl>
+        <dd><input type="checkbox">やけど</dd>
+      </dl>
+    </div>
+    <div class="panel">
+      <div class="panel_head">
+        <h2>防御側ポケモン</h2>
+        <div><button>新規</button><button>保存</button><button>読込</button></div>
+      </div>
+      <h3>ポケモン</h3>
+      <dl>
+        <dd><input type="text"></dd>
+      </dl>
+      <h3>努力値</h3>
+      <div class="doryokuchi">
+        <div>H</div>
+        <input type="number">
+        <div>A</div>
+        <input type="number">
+        <div>B</div>
+        <input type="number">
+        <div>C</div>
+        <input type="number">
+        <div>D</div>
+        <input type="number">
+        <div>S</div>
+        <input type="number">
+      </div>
+      <div class="tokusei_dougu">
+        <div class="tokusei">
+          <h3>とくせい</h3>
+          <dl>
+            <dd>
+              <select>
+                <option>もうか</option>
+                <option>あついしぼう</option>
+                <option>どんかん</option>
+              </select>
+            </dd>
+          </dl>
+        </div>
+        <div class="seikaku">
+          <h3>テラスタイプ</h3>
+          <dl>
+            <dd>
+              <select>
+                <option>むし</option>
+                <option>ゴースト</option>
+                <option>エスパー</option>
+              </select>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="tokusei_dougu">
+        <div class="seikaku">
+          <h3>せいかく</h3>
+          <dl>
+            <dd>
+              <select>
+                <option>がんばりや</option>
+                <option>さみしがり</option>
+                <option>ひかえめ</option>
+              </select>
+            </dd>
+          </dl>
+        </div>
+        <div class="dougu">
+          <h3>どうぐ</h3>
+          <dl>
+            <dd>
+              <input type="text">
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <hr>
+      <h3>ランク変化</h3>
+      <div class="rank">
+        <div>H</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>A</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>B</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>C</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>D</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+        <div>S</div>
+        <select>
+          <option>+6</option>
+          <option>+5</option>
+          <option>+4</option>
+          <option>+3</option>
+          <option>+2</option>
+          <option>+1</option>
+          <option>+0</option>
+          <option>-1</option>
+          <option>-2</option>
+          <option>-3</option>
+          <option>-4</option>
+          <option>-5</option>
+          <option>-6</option>
+        </select>
+      </div>
+      <h3>その他</h3>
+      <dl>
+        <dd><input type="checkbox">ひかりのかべ</dd>
+        <dd><input type="checkbox">リフレクター</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="field">
+    <div class="field_flex">
+      <div class="weather">
+        <h3>天候</h3>
+        <dl>
+          <dd>
+            <select>
+              <option>はれ</option>
+              <option>あめ</option>
+              <option>すなあらし</option>
+            </select>
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <h3>フィールド</h3>
+        <dl>
+          <dd>
+            <select>
+              <option>エレキフィールド</option>
+              <option>hogehogeフィールド</option>
+            </select>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

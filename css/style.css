@@ -1,0 +1,85 @@
+body{
+  margin:0 auto;
+}
+.content{
+  padding-top: 16px;
+  max-width: 1200px;
+  margin:0 auto;
+}
+.panels{
+  display: flex;
+  justify-content: space-between;
+}
+.panel{
+  width: 49%;
+  border-radius: 4px;
+  border:1px solid #ccc;
+  padding: 16px;
+}
+.panel dl{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+.panel dl dt{
+  width: 25%;
+}
+.panel dl dd{
+  width: 75%;
+}
+.panel_head{
+  display: flex;
+  justify-content: space-between;
+}
+.panel_head button{
+  border-radius: 4px;
+  background-color:rgb(43, 90, 212);
+  color: #fff;;
+  border:none;
+  font-size: 16px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-left: 6px;
+}
+.doryokuchi,.rank{
+  display: flex;
+  margin-left: 1rem;
+  margin-bottom: 24px;
+}
+.doryokuchi input{
+  width: 13%;
+  margin-left: 4px;
+  margin-right: 4px;;
+}
+.tokusei_dougu{
+  display: flex;
+  justify-content: space-between;
+}
+.tokusei,.dougu,.seikaku,.terasu{
+  width: 48%;
+}
+.rank select{
+  margin-left:7px;
+  margin-right: 24px;
+}
+input{
+  max-width: 100%;
+}
+h2{
+  font-size:24px;
+}
+h3{
+  font-size:18px;
+}
+.field{
+  margin-top: 16px;
+  border-radius: 4px;
+  border:1px solid #ccc;
+  padding: 16px;
+}
+.field_flex{
+  display: flex;
+}
+.weather{
+  margin-right:2%;
+}
