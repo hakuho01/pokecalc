@@ -11,12 +11,16 @@
     <div class="panel">
       <div class="panel_head">
         <h2>攻撃側ポケモン</h2>
-        <div><button>新規</button><button>保存</button><button>読込</button></div>
       </div>
       <h3>ポケモン</h3>
       <dl>
+        <dd class="stats"><input type="text"><p>H:160 A:100 B:120 C:45 D:78 S:90</p></dd>
+      </dl>
+      <h3>わざ</h3>
+      <dl>
         <dd><input type="text"></dd>
       </dl>
+      <hr>
       <h3>努力値</h3>
       <div class="doryokuchi">
         <div>H</div>
@@ -64,9 +68,9 @@
           <dl>
             <dd>
               <select>
-                <option>がんばりや</option>
-                <option>さみしがり</option>
-                <option>ひかえめ</option>
+                <option>上昇(1.1)</option>
+                <option>無補正(1.0)</option>
+                <option>下降(0.9)</option>
               </select>
             </dd>
           </dl>
@@ -184,16 +188,28 @@
       <dl>
         <dd><input type="checkbox">やけど</dd>
       </dl>
+      <ul class="tab">
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+      </ul>
     </div>
     <div class="panel">
       <div class="panel_head">
         <h2>防御側ポケモン</h2>
-        <div><button>新規</button><button>保存</button><button>読込</button></div>
       </div>
       <h3>ポケモン</h3>
       <dl>
-        <dd><input type="text"></dd>
-      </dl>
+      <dd class="stats"><input type="text"><p>H:160 A:100 B:120 C:45 D:78 S:90</p></dd>
+    </dl>
+    <h3 class="inv">わざ</h3>
+    <dl class="inv">
+      <dd><input type="text"></dd>
+    </dl>
+    <hr>
       <h3>努力値</h3>
       <div class="doryokuchi">
         <div>H</div>
@@ -362,6 +378,14 @@
         <dd><input type="checkbox">ひかりのかべ</dd>
         <dd><input type="checkbox">リフレクター</dd>
       </dl>
+      <ul class="tab">
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png"></li>
+      </ul>
     </div>
   </div>
   <div class="field">
@@ -389,6 +413,7 @@
           </dd>
         </dl>
       </div>
+      <button class="change">攻守入替</button>
     </div>
   </div>
 </div>
