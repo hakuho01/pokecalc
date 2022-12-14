@@ -138,3 +138,10 @@ h3{
   padding-left: 10px;
   margin-left: 36px;
 }
+.waza{
+  display: flex;
+}
+.waza p{
+  margin-bottom: 0;
+  margin-left: 12px;
+}
